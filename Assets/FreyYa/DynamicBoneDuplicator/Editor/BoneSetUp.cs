@@ -47,8 +47,8 @@ namespace FreyYa
 			target.m_EndOffset = ori.m_EndOffset;
 			target.m_Gravity = ori.m_Gravity;
 			target.m_Force = ori.m_Force;
-			target.m_Colliders = ori.m_Colliders;
-			target.m_Exclusions = ori.m_Exclusions;
+			target.m_Colliders = new List<DynamicBoneColliderBase>(ori.m_Colliders);
+			target.m_Exclusions = new List<Transform>(ori.m_Exclusions);
 			target.m_FreezeAxis = ori.m_FreezeAxis;
 			target.m_DistantDisable = ori.m_DistantDisable;
 			target.m_DistanceToObject = ori.m_DistanceToObject;
